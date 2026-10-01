@@ -13,17 +13,14 @@
     <script>
         let rows = Number(prompt("Enter the number of rows:"));
 
-        // Upper half
         for (let i = 1; i <= rows; i++) {
 
             let pattern = "";
 
-            // Spaces before stars
             for (let j = 1; j <= rows - i; j++) {
                 pattern += " ";
             }
 
-            // Stars and spaces inside
             for (let j = 1; j <= (2 * i - 1); j++) {
 
                 if (j === 1 || j === (2 * i - 1)) {
@@ -36,17 +33,14 @@
             console.log(pattern);
         }
 
-        // Lower half
         for (let i = rows - 1; i >= 1; i--) {
 
             let pattern = "";
 
-            // Spaces before stars
             for (let j = 1; j <= rows - i; j++) {
                 pattern += " ";
             }
 
-            // Stars and spaces inside
             for (let j = 1; j <= (2 * i - 1); j++) {
 
                 if (j === 1 || j === (2 * i - 1)) {
